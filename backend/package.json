@@ -1,0 +1,32 @@
+{
+  "name": "transport-dange-backend",
+  "version": "1.0.0",
+  "description": "Backend API pour Transport DanGE - Application de dispatch taxi",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "init-db": "node database/init.js",
+    "create-admin": "node scripts/createAdmin.js"
+  },
+  "keywords": ["taxi", "dispatch", "transport", "dange"],
+  "author": "Transport DanGE",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "dotenv": "^16.3.1",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "socket.io": "^4.6.1",
+    "firebase-admin": "^12.0.0",
+    "exceljs": "^4.4.0",
+    "express-validator": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

@@ -1,0 +1,48 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Globe background -->
+  <circle cx="100" cy="100" r="70" fill="#7CB992" opacity="0.9"/>
+  
+  <!-- Continents (simplified) -->
+  <path d="M80,70 Q85,65 90,70 L95,75 Q100,80 95,85 L90,90 Q85,95 80,90 Z" fill="#4A7C59"/>
+  <path d="M110,60 Q115,55 120,60 L125,65 Q130,70 125,75 L120,80 Q115,85 110,80 Z" fill="#4A7C59"/>
+  <path d="M70,110 Q75,105 80,110 L90,120 Q95,125 90,130 L80,140 Q75,145 70,140 Z" fill="#4A7C59"/>
+  
+  <!-- Leaves on left -->
+  <ellipse cx="30" cy="80" rx="15" ry="25" fill="#5DBD58" transform="rotate(-20 30 80)"/>
+  <ellipse cx="25" cy="100" rx="12" ry="22" fill="#66BB6A" transform="rotate(-30 25 100)"/>
+  <ellipse cx="35" cy="110" rx="13" ry="20" fill="#5DBD58" transform="rotate(-15 35 110)"/>
+  
+  <!-- Taxi icons around globe -->
+  <!-- Top taxi -->
+  <g transform="translate(90, 20)">
+    <rect x="0" y="0" width="20" height="12" rx="2" fill="#2C2C2C"/>
+    <rect x="2" y="2" width="7" height="8" fill="#FFA726"/>
+    <rect x="11" y="2" width="7" height="8" fill="#FFA726"/>
+    <circle cx="5" cy="13" r="2" fill="#333"/>
+    <circle cx="15" cy="13" r="2" fill="#333"/>
+  </g>
+  
+  <!-- Right taxi -->
+  <g transform="translate(155, 95)">
+    <rect x="0" y="0" width="20" height="12" rx="2" fill="#2C2C2C"/>
+    <rect x="2" y="2" width="7" height="8" fill="#FFA726"/>
+    <rect x="11" y="2" width="7" height="8" fill="#FFA726"/>
+    <circle cx="5" cy="13" r="2" fill="#333"/>
+    <circle cx="15" cy="13" r="2" fill="#333"/>
+  </g>
+  
+  <!-- Bottom taxi -->
+  <g transform="translate(85, 165)">
+    <rect x="0" y="0" width="20" height="12" rx="2" fill="#2C2C2C"/>
+    <rect x="2" y="2" width="7" height="8" fill="#FFA726"/>
+    <rect x="11" y="2" width="7" height="8" fill="#FFA726"/>
+    <circle cx="5" cy="13" r="2" fill="#333"/>
+    <circle cx="15" cy="13" r="2" fill="#333"/>
+  </g>
+  
+  <!-- Text TAXI DANGE -->
+  <text x="100" y="15" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#5A5A5A" text-anchor="middle">TAXI DANGE</text>
+  
+  <!-- Text TAXI DUNOIS -->
+  <text x="100" y="195" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#5A5A5A" text-anchor="middle">TAXI DUNOIS</text>
+</svg>
