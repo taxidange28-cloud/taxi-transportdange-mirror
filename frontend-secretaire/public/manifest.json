@@ -1,0 +1,9 @@
+{
+  "short_name": "DanGE Secrétaire",
+  "name": "Transport DanGE - Secrétaire",
+  "icons":  [],
+  "start_url":  ".",
+  "display": "standalone",
+  "theme_color": "#4CAF50",
+  "background_color": "#ffffff"
+}
