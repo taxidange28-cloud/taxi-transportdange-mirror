@@ -1,0 +1,52 @@
+services:
+  # Backend API
+  - type: web
+    name: transport-dange-backend
+    env: node
+    region: frankfurt
+    plan:  free
+    buildCommand: cd backend && npm install
+    startCommand:  cd backend && npm start
+    envVars:
+      - key:  NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key:  CORS_ORIGINS
+        sync:  false
+
+  # Frontend Secrétaire
+  - type: web
+    name: transport-dange-frontend
+    env: static
+    region: frankfurt
+    plan:  free
+    buildCommand: cd frontend && npm ci && npm run build
+    staticPublishPath: ./frontend/dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_URL
+        value:  https://transport-dange-backend.onrender.com/api
+
+  # Frontend Chauffeur (PWA)
+  - type: web
+    name: transport-dange-chauffeur
+    env: static
+    region: frankfurt
+    plan: free
+    buildCommand: cd frontend-chauffeur && npm install && npm run build
+    staticPublishPath: ./frontend-chauffeur/build
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key:  REACT_APP_API_URL
+        value: https://transport-dange-backend.onrender. com/api
+      - key:  REACT_APP_WS_URL
+        value: wss://transport-dange-backend.onrender.com
