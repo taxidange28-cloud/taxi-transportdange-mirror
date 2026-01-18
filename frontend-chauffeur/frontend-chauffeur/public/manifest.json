@@ -1,0 +1,29 @@
+{
+  "short_name": "DanGE Taxi",
+  "name": "Transport DanGE - Chauffeur",
+  "description": "Application chauffeurs Transport DanGE",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/chauffeur",
+  "display": "standalone",
+  "theme_color": "#4CAF50",
+  "background_color": "#4CAF50",
+  "orientation": "portrait"
+}
