@@ -35,9 +35,9 @@ function Dashboard() {
   const [reminderDate, setReminderDate] = useState(null);
   const [openGestionChauffeurs, setOpenGestionChauffeurs] = useState(false);
   const [filters, setFilters] = useState({
-    date_debut: format(new Date(), 'yyyy-MM-dd'),
-    date_fin: format(new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), 'yyyy-MM-dd'),
-  });
+  date_debut: null,  // Pas de filtre de début
+  date_fin: null,    // Pas de filtre de fin
+});
 
   const showSnackbar = useCallback((message, severity = 'info') => {
     setSnackbar({ open: true, message, severity });
