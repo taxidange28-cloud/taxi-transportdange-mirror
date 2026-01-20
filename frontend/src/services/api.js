@@ -100,14 +100,3 @@ export const getChauffeurHistory = (id, limit = 50) =>
   api.get(`/geolocation/history/${id}`, { params: { limit } });
 
 export default api;
-```
-
-**Commit : `fix: Correct syntax errors in api.js (template literals)`**
-
----
-
-## **PROBLÈME 2 : JWT NE CONTIENT PEUT-ÊTRE PAS "ID"**
-
-**Montrez-moi le fichier de login backend :**
-```
-backend/src/controllers/authController.js
